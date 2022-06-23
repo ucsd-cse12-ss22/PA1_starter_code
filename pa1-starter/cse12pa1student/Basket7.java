@@ -3,9 +3,9 @@ package cse12pa1student;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Basket8 implements Basket {
+public class Basket7 implements Basket {
 
-    public Basket8() {
+    public Basket7() {
         this.items = new ArrayList<ArrayList<Item>>();
     }
 

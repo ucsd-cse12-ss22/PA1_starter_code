@@ -2,12 +2,13 @@ package cse12pa1student;
 
 import java.util.ArrayList;
 
-public class Basket7 implements Basket {
-	ArrayList<Item> items;
+public class Basket6 implements Basket {
 
-	public Basket7() {
+	public Basket6() {
 		this.items = new ArrayList<Item>();
 	}
+
+	ArrayList<Item> items;
 
 	@Override
 	public int count() {
@@ -18,7 +19,7 @@ public class Basket7 implements Basket {
 	public int countItem(Item i) {
 		int countItem = 0;
 		for (int j = 0; j < this.items.size(); j += 1) {
-			if (this.items.get(j) == i) {
+			if (this.items.get(j).equals(i)) {
 				countItem += 1;
 			}
 		}
@@ -41,15 +42,19 @@ public class Basket7 implements Basket {
 
 	@Override
 	public boolean removeFromBasket(Item i) {
+		if(i == null) { return false; }
 		return this.items.remove(i);
 	}
 
 	@Override
 	public boolean removeAllFromBasket(Item i) {
+		if(i == null) { return false; }
+		boolean removed = false;
 		while (this.items.contains(i)) {
+			removed = true;
 			this.items.remove(i);
 		}
-		return this.items.contains(i);
+		return removed;
 	}
 	
 	@Override

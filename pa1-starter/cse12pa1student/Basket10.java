@@ -3,9 +3,9 @@ package cse12pa1student;
 
 import java.util.ArrayList;
 
-public class Basket12 implements Basket {
+public class Basket10 implements Basket {
 
-	public Basket12() {
+	public Basket10() {
 		this.items = new ArrayList<Item>();
 		this.counts = new ArrayList<Integer>();
 	}

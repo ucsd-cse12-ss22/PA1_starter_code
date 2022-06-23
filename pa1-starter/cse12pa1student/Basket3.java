@@ -2,10 +2,10 @@ package cse12pa1student;
 
 import java.util.ArrayList;
 
-public class Basket5 implements Basket {
+public class Basket3 implements Basket {
 	static ArrayList<Item> items;
 
-	public Basket5() {
+	public Basket3() {
 		this.items = new ArrayList<Item>();
 	}
 	

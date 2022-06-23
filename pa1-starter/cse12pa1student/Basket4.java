@@ -1,10 +1,10 @@
 package cse12pa1student;
 
-public class Basket6 implements Basket {
+public class Basket4 implements Basket {
 
 	private Item[] items;
 	
-	public Basket6() {
+	public Basket4() {
 		this.items = new Item[10];
 	}
 	
